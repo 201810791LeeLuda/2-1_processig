@@ -1,0 +1,26 @@
+size(900,600);
+
+background(200);
+
+noStroke();
+fill(200, 200, 0);
+ellipse(300, 150, 690, 690);
+fill(0, 100, 150, 100);
+triangle(90, 540, 785, 690, 840, 120);
+
+stroke(150, 0, 150);
+strokeWeight(30);
+fill(100, 0, 100);
+ellipse(450, 420, 300, 300);
+ellipse(450, 420, 150, 150);
+
+noStroke();
+ellipse(240, 165, 90, 90);
+
+stroke(120);
+strokeJoin(ROUND);
+strokeWeight(36);
+noFill();
+triangle(450, 120, 750, 300, 810, 60);
+
+saveFrame("ColorShape.jpg");
