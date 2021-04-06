@@ -1,0 +1,34 @@
+size(900,600);
+
+background(100);
+
+translate(width/2,height/2);
+
+for(float i=0; i<TWO_PI;i+=0.25){
+ pushMatrix();
+ rotate(i);
+ stroke(0);
+ line(0,0,30,0);
+ for(float j=0; j<TWO_PI; j+=0.6){
+  pushMatrix();
+  translate(100,0);
+  
+  rotate(-j);
+  stroke(0);
+  fill(180,85,162);
+  rect(0,0,50,10);
+  
+  for(float k=0; k<TWO_PI;k+=0.6){
+    pushMatrix();
+    translate(300,0);
+    
+    rotate(k);
+    stroke(255,51,153);
+    line(0,0,50,0);
+    
+  popMatrix();
+  }
+  popMatrix();
+ }
+ popMatrix();
+}
