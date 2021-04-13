@@ -1,0 +1,18 @@
+size(900,600);
+background(0);
+
+color red = color(250,70,70);
+
+color blue = color(0,120,230);
+
+color pink = color(255,51,153);
+
+PImage i;
+i=loadImage("prosche.jpg");
+
+tint(red);
+image(i,0,0);
+tint(blue);
+image(i,width/3,0);
+tint(pink);
+image(i,2*width/3,0);
