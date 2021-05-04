@@ -1,0 +1,22 @@
+float y = 50;
+float s = 1.5;
+float r = 20.0;
+int direction = 1;
+
+void setup(){
+  size(200,200);
+  smooth();
+  noStroke();
+  ellipseMode(RADIUS);
+}
+
+void draw(){
+  fill(0,13);
+  rect(0,0,width,height);
+  fill(255);
+  ellipse(100,y,r,r);
+  y+=s*direction;
+  if((y>height-r)||(y<r)){
+    direction=-direction;
+  }
+}
