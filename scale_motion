@@ -1,0 +1,17 @@
+float rate = 0.0;
+
+void setup(){
+  size(200,200);
+  smooth();
+  noStroke();
+}
+
+void draw(){
+  fill(0,100,150);
+  rect(0,0,width,height);
+  rate = rate +0.2;
+  translate(100,100);
+  scale(rate);
+  fill(0,200,250);
+  ellipse(0,0,10,10);
+}
