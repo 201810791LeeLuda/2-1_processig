@@ -1,0 +1,16 @@
+float angle = 0.0;
+void setup(){
+  size(200,200);
+  smooth();
+  noStroke();
+}
+void draw(){
+  fill(150,0,150);
+  rect(0,0,width,height);
+  fill(255);
+  angle = angle+0.5;
+  translate(100,100);
+  
+  rotate(angle);
+  rect(-40,-40,80,80);
+}
