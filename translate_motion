@@ -1,0 +1,25 @@
+float y = 50.0;
+float s = 1.0;
+float r = 30.0;
+
+void setup(){
+  size(200,200);
+  smooth();
+  noStroke();
+}
+
+void draw(){
+  fill(200);
+  rect(0,0,width,height);
+  fill(200,50,0);
+  pushMatrix();
+  translate(0,y);
+  ellipse(70,0,r,r);
+  popMatrix();
+  fill(0,50,200);
+  ellipse(140,80,r,r);
+  y+=s;
+  if(y>height+r){
+    y=-r;
+  }
+}
